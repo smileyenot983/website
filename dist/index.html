@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ramil Khafizov</title>
+  <meta name="description" content="Ramil Khafizov is a PhD researcher working on generative models, visual foundation models, and 3D computer vision. Publications, research, and open-source projects.">
+  <meta name="theme-color" content="#ffffff">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ramil Khafizov">
+  <meta property="og:description" content="Generative models, visual foundation models, and 3D computer vision.">
+  <meta property="og:url" content="https://ramil-khafizov.jovialmite512.chatgpt.site/">
+  <link rel="canonical" href="https://ramil-khafizov.jovialmite512.chatgpt.site/">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="fonts/lato-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+  <a class="skip-link" href="#research">Skip to research</a>
+  <main class="page">
+    <header class="intro">
+      <h1>Ramil Khafizov</h1>
+      <p>I’m a PhD researcher at the Applied AI Institute, working on <strong>generative models, visual foundation models, and 3D computer vision</strong>. My research explores how generative models can use geometry to synthesize consistent views and reconstruct the 3D world.</p>
+      <p>I work on next-scale autoregressive generation, geometry-aware attention, and adapting visual foundation models with camera and depth priors. Previously, I was a deep learning researcher at <a href="https://www.artec3d.com/">Artec 3D</a>, where I worked on generative 3D editing, spatial vision-language modeling, and promptable 3D segmentation.</p>
+      <nav class="profile-links" aria-label="Profile links">
+        <a href="mailto:ramilaidarovich@gmail.com">Email</a><span aria-hidden="true">/</span>
+        <a href="data/Ramil_Khafizov_CV.pdf">CV</a><span aria-hidden="true">/</span>
+        <a href="https://scholar.google.com/citations?user=f_5pNeYAAAAJ">Google Scholar</a><span aria-hidden="true">/</span>
+        <a href="https://github.com/smileyenot983">GitHub</a>
+      </nav>
+    </header>
+
+    <section id="research" aria-labelledby="research-heading">
+      <div class="section-intro">
+        <h2 id="research-heading">Research</h2>
+        <p>I’m interested in efficient generative modeling and the intersection of appearance and geometry: autoregressive models, diffusion and flow matching, novel-view synthesis, and feed-forward 3D reconstruction.</p>
+      </div>
+
+      <article class="research-entry highlighted">
+        <a class="thumbnail namvis-grid" href="https://corl-team.github.io/namvis/" aria-label="NAMVIS project page">
+          <img src="images/namvis-frog-input.png" alt="Frog object, input view" width="256" height="256">
+          <img src="images/namvis-frog-output.png" alt="Frog object, NAMVIS-generated novel view" width="256" height="256">
+          <img src="images/namvis-car-input.png" alt="Car object, input view" width="256" height="256">
+          <img src="images/namvis-car-output.png" alt="Car object, NAMVIS-generated novel view" width="256" height="256">
+        </a>
+        <div class="entry-body">
+          <h3><a href="https://corl-team.github.io/namvis/">NAMVIS: Next-Scale Autoregressive Multi-View Image Synthesis</a></h3>
+          <p class="authors"><strong>Ramil Khafizov</strong>, Ilya Statsenko, Ruslan Rakhimov, Artem Komarichev, Peter Wonka, Evgeny Burnaev</p>
+          <p class="venue"><em>NeurIPS</em>, 2026</p>
+          <p class="paper-links"><a href="https://corl-team.github.io/namvis/">project page</a> / <a href="https://arxiv.org/abs/2610.04722">paper</a> / <a href="https://github.com/corl-team/namvis">code</a> / <a href="data/namvis.bib">bibtex</a></p>
+          <p class="description">Geometry-conditioned next-scale autoregression generates consistent novel views without iterative denoising, with over 3× faster inference than the evaluated diffusion baselines.</p>
+        </div>
+      </article>
+
+      <article class="research-entry">
+        <a class="thumbnail" href="https://voyleg.github.io/atata/" aria-label="One Algorithm to Align Them All project page">
+          <img class="atata-image" src="images/atata.png" alt="Structurally aligned generated images from One Algorithm to Align Them All" width="160" height="160" loading="lazy">
+        </a>
+        <div class="entry-body">
+          <h3><a href="https://voyleg.github.io/atata/">One Algorithm to Align Them All</a></h3>
+          <p class="authors">Boyi Pang, Savva Ignatyev, Vladimir Ippolitov, <strong>Ramil Khafizov</strong>, Yurii Melnik, Oleg Voynov, Maksim Nakhodnov, Aibek Alanov, Xiaopeng Fan, Peter Wonka, Evgeny Burnaev</p>
+          <p class="venue"><em>CVPR</em>, 2026</p>
+          <p class="paper-links"><a href="https://voyleg.github.io/atata/">project page</a> / <a href="https://openaccess.thecvf.com/content/CVPR2026/html/Pang_One_Algorithm_to_Align_Them_All_CVPR_2026_paper.html">paper</a> / <a href="https://arxiv.org/abs/2601.11194">arXiv</a> / <a href="data/atata.bib">bibtex</a></p>
+          <p class="description">A training-free rectified-flow method for jointly generating structurally aligned images, videos, and 3D shapes.</p>
+        </div>
+      </article>
+
+      <article class="research-entry">
+        <a class="thumbnail" href="https://arxiv.org/abs/2508.11379" aria-label="G-CUT3R paper">
+          <img class="architecture-image" src="images/gcut3r.png" alt="G-CUT3R architecture integrating RGB images with camera and depth priors" width="160" height="160" loading="lazy">
+        </a>
+        <div class="entry-body">
+          <h3><a href="https://arxiv.org/abs/2508.11379">G-CUT3R: Guided 3D Reconstruction with Camera and Depth Prior Integration</a></h3>
+          <p class="authors"><strong>Ramil Khafizov</strong>, Artem Komarichev, Ruslan Rakhimov, Peter Wonka, Evgeny Burnaev</p>
+          <p class="venue"><em>arXiv preprint</em>, 2025</p>
+          <p class="paper-links"><a href="https://arxiv.org/abs/2508.11379">paper</a> / <a href="https://github.com/smileyenot983/G-CUT3R">code</a> / <a href="data/gcut3r.bib">bibtex</a></p>
+          <p class="description">Feed-forward 3D reconstruction that incorporates available depth, camera calibration, and pose priors through modality-specific encoders and zero-initialized fusion.</p>
+        </div>
+      </article>
+    </section>
+
+    <section class="text-section" aria-labelledby="ongoing-heading">
+      <h2 id="ongoing-heading">Ongoing research</h2>
+      <h3>ARGeoSplat: Autoregressive Geometry Generation and Refinement for Sparse-View 3D Reconstruction</h3>
+      <p class="authors"><strong>Ramil Khafizov</strong>, Artem Komarichev, Ilya Statsenko, Ruslan Rakhimov, Peter Wonka, Evgeny Burnaev</p>
+      <p class="venue"><em>Submitted to ICLR</em>, 2027</p>
+      <p>Joint next-scale autoregressive generation of RGB views and quantized 3D pointmaps, with geometry supervision and cost-volume depth refinement for sparse-view 3D Gaussian reconstruction.</p>
+    </section>
+
+    <section class="text-section" aria-labelledby="opensource-heading">
+      <h2 id="opensource-heading">Open source</h2>
+      <h3><a href="https://github.com/smileyenot983/shortcut_pytorch">Shortcut Models — PyTorch reproduction</a></h3>
+      <p>My independent implementation, training, and open-source release of Shortcut Models for one- and few-step flow-matching generation. <a href="https://github.com/smileyenot983/shortcut_pytorch">Code &amp; results</a>.</p>
+    </section>
+
+    <section class="text-section" aria-labelledby="experience-heading">
+      <h2 id="experience-heading">Experience</h2>
+      <div class="timeline-entry">
+        <div class="entry-heading"><h3>Applied AI Institute</h3><span class="date">Sep 2024 – present</span></div>
+        <p class="role">Deep Learning Researcher</p>
+        <p>Generative modeling and 3D reconstruction, from model design to large-scale training and evaluation. Led experiments with models up to 2B parameters on up to 32 H100 GPUs, and built rendering, filtering, and streaming pipelines for datasets of up to 400K scenes.</p>
+      </div>
+      <div class="timeline-entry">
+        <div class="entry-heading"><h3><a href="https://www.artec3d.com/">Artec 3D</a></h3><span class="date">Sep 2021 – Sep 2024</span></div>
+        <p class="role">Deep Learning Researcher</p>
+        <p>Generative editing of NeRF and 3D Gaussian representations with 2D diffusion priors; spatial vision-language models; and CLIP-based promptable 3D segmentation. Developed algorithms incorporated into commercial products and internal libraries.</p>
+      </div>
+    </section>
+
+    <section class="text-section" aria-labelledby="education-heading">
+      <h2 id="education-heading">Education</h2>
+      <div class="education-entry">
+        <div class="entry-heading"><h3>Applied AI Institute</h3><span class="date">2024 – 2027 <span class="expected">(expected)</span></span></div>
+        <p>PhD in Computer Science, in progress</p>
+      </div>
+      <div class="education-entry">
+        <div class="entry-heading"><h3>Innopolis University</h3><span class="date">2019 – 2021</span></div>
+        <p>MSc in Computer Science · Robotics and Computer Vision<br>With honors · GPA: 4.82/5.00</p>
+      </div>
+      <div class="education-entry">
+        <div class="entry-heading"><h3>Kazan Federal University</h3><span class="date">2015 – 2019</span></div>
+        <p>BSc in Engineering · GPA: 4.50/5.00</p>
+      </div>
+    </section>
+
+    <section class="text-section recognition" aria-labelledby="recognition-heading">
+      <h2 id="recognition-heading">Recognition</h2>
+      <p><a href="https://hilti-challenge.com/leader-board-2023.html">Hilti SLAM Challenge 2023</a> — 3rd place, Team Strelka.</p>
+    </section>
+
+    <footer>
+      <p>Design adapted from <a href="https://jonbarron.info/">Jon Barron’s website</a> · <a href="https://github.com/jonbarron/jonbarron.github.io">template</a></p>
+    </footer>
+  </main>
+</body>
+</html>
