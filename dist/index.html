@@ -4,27 +4,31 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ramil Khafizov</title>
-  <meta name="description" content="Ramil Khafizov is a PhD researcher working on generative models, visual foundation models, and 3D computer vision. Publications, research, and open-source projects.">
+  <meta name="description" content="Ramil Khafizov is a PhD researcher working on generative AI and visual foundation models, with interests in diffusion, flow matching, autoregression, and world models.">
   <meta name="theme-color" content="#ffffff">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Ramil Khafizov">
-  <meta property="og:description" content="Generative models, visual foundation models, and 3D computer vision.">
-  <meta property="og:url" content="https://ramil-khafizov.jovialmite512.chatgpt.site/">
-  <link rel="canonical" href="https://ramil-khafizov.jovialmite512.chatgpt.site/">
+  <meta property="og:description" content="Generative AI and visual foundation models. Diffusion, flow matching, autoregression, and world models.">
+  <meta property="og:url" content="https://smileyenot983.github.io/">
+  <meta property="og:image" content="https://smileyenot983.github.io/images/social-preview.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Ramil Khafizov — generative AI and visual foundation models">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://smileyenot983.github.io/">
   <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
   <link rel="preload" href="fonts/lato-regular.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="stylesheet" href="stylesheet.css?v=25913526">
 </head>
 <body>
   <a class="skip-link" href="#research">Skip to research</a>
   <main class="page">
     <header class="intro">
       <h1>Ramil Khafizov</h1>
-      <p>I’m a PhD researcher at the Applied AI Institute, working on <strong>generative models, visual foundation models, and 3D computer vision</strong>. My research explores how generative models can use geometry to synthesize consistent views and reconstruct the 3D world.</p>
-      <p>I work on next-scale autoregressive generation, geometry-aware attention, and adapting visual foundation models with camera and depth priors. Previously, I was a deep learning researcher at <a href="https://www.artec3d.com/">Artec 3D</a>, where I worked on generative 3D editing, spatial vision-language modeling, and promptable 3D segmentation.</p>
+      <p>I’m a PhD researcher at the Applied AI Institute, working on <strong>generative AI and visual foundation models</strong>. I study efficient and controllable generation through diffusion, flow matching, and autoregression, and I’m interested in world models.</p>
+      <p>I develop models and training pipelines end to end, with experiments on models up to <strong>2B parameters</strong> and multi-node setups of up to <strong>32 H100 GPUs</strong>. Previously, I was a deep learning researcher at <a href="https://www.artec3d.com/">Artec 3D</a>, where I worked on generative 3D editing, spatial vision-language modeling, and promptable 3D segmentation.</p>
       <nav class="profile-links" aria-label="Profile links">
         <a href="mailto:ramilaidarovich@gmail.com">Email</a><span aria-hidden="true">/</span>
-        <a href="data/Ramil_Khafizov_CV.pdf">CV</a><span aria-hidden="true">/</span>
         <a href="https://scholar.google.com/citations?user=f_5pNeYAAAAJ">Google Scholar</a><span aria-hidden="true">/</span>
         <a href="https://github.com/smileyenot983">GitHub</a>
       </nav>
@@ -33,28 +37,29 @@
     <section id="research" aria-labelledby="research-heading">
       <div class="section-intro">
         <h2 id="research-heading">Research</h2>
-        <p>I’m interested in efficient generative modeling and the intersection of appearance and geometry: autoregressive models, diffusion and flow matching, novel-view synthesis, and feed-forward 3D reconstruction.</p>
       </div>
 
       <article class="research-entry highlighted">
         <a class="thumbnail namvis-grid" href="https://corl-team.github.io/namvis/" aria-label="NAMVIS project page">
+          <span class="preview-label">Input</span>
+          <span class="preview-label">Generated</span>
           <img src="images/namvis-frog-input.png" alt="Frog object, input view" width="256" height="256">
           <img src="images/namvis-frog-output.png" alt="Frog object, NAMVIS-generated novel view" width="256" height="256">
-          <img src="images/namvis-car-input.png" alt="Car object, input view" width="256" height="256">
-          <img src="images/namvis-car-output.png" alt="Car object, NAMVIS-generated novel view" width="256" height="256">
+          <img src="images/namvis-chest-input.png" alt="Treasure chest, input view" width="256" height="256">
+          <img src="images/namvis-chest-output.png" alt="Treasure chest, NAMVIS-generated novel view" width="256" height="256">
         </a>
         <div class="entry-body">
           <h3><a href="https://corl-team.github.io/namvis/">NAMVIS: Next-Scale Autoregressive Multi-View Image Synthesis</a></h3>
           <p class="authors"><strong>Ramil Khafizov</strong>, Ilya Statsenko, Ruslan Rakhimov, Artem Komarichev, Peter Wonka, Evgeny Burnaev</p>
           <p class="venue"><em>NeurIPS</em>, 2026</p>
           <p class="paper-links"><a href="https://corl-team.github.io/namvis/">project page</a> / <a href="https://arxiv.org/abs/2610.04722">paper</a> / <a href="https://github.com/corl-team/namvis">code</a> / <a href="data/namvis.bib">bibtex</a></p>
-          <p class="description">Geometry-conditioned next-scale autoregression generates consistent novel views without iterative denoising, with over 3× faster inference than the evaluated diffusion baselines.</p>
+          <p class="description">I led end-to-end model development and training, including multi-scale camera conditioning for consistent novel-view generation. NAMVIS uses next-scale autoregression without iterative denoising and runs over 3× faster than the evaluated diffusion baselines.</p>
         </div>
       </article>
 
       <article class="research-entry">
         <a class="thumbnail" href="https://voyleg.github.io/atata/" aria-label="One Algorithm to Align Them All project page">
-          <img class="atata-image" src="images/atata.png" alt="Structurally aligned generated images from One Algorithm to Align Them All" width="160" height="160" loading="lazy">
+          <img class="atata-image" src="images/atata.jpg" alt="Structurally aligned generated images from One Algorithm to Align Them All" width="480" height="235" loading="lazy" decoding="async">
         </a>
         <div class="entry-body">
           <h3><a href="https://voyleg.github.io/atata/">One Algorithm to Align Them All</a></h3>
@@ -66,8 +71,9 @@
       </article>
 
       <article class="research-entry">
-        <a class="thumbnail" href="https://arxiv.org/abs/2508.11379" aria-label="G-CUT3R paper">
-          <img class="architecture-image" src="images/gcut3r.png" alt="G-CUT3R architecture integrating RGB images with camera and depth priors" width="160" height="160" loading="lazy">
+        <a class="thumbnail result-preview" href="https://arxiv.org/abs/2508.11379" aria-label="G-CUT3R paper">
+          <span class="preview-label">3D reconstruction</span>
+          <img src="images/gcut3r-result.jpg" alt="Room reconstructed by G-CUT3R with depth guidance, from Figure 1 of the paper" width="480" height="480" loading="lazy" decoding="async">
         </a>
         <div class="entry-body">
           <h3><a href="https://arxiv.org/abs/2508.11379">G-CUT3R: Guided 3D Reconstruction with Camera and Depth Prior Integration</a></h3>
@@ -98,7 +104,7 @@
       <div class="timeline-entry">
         <div class="entry-heading"><h3>Applied AI Institute</h3><span class="date">Sep 2024 – present</span></div>
         <p class="role">Deep Learning Researcher</p>
-        <p>Generative modeling and 3D reconstruction, from model design to large-scale training and evaluation. Led experiments with models up to 2B parameters on up to 32 H100 GPUs, and built rendering, filtering, and streaming pipelines for datasets of up to 400K scenes.</p>
+        <p>Generative modeling and 3D reconstruction, from model design to large-scale training and evaluation. Designed multi-node training experiments and built rendering, filtering, and streaming pipelines for datasets of up to 400K scenes.</p>
       </div>
       <div class="timeline-entry">
         <div class="entry-heading"><h3><a href="https://www.artec3d.com/">Artec 3D</a></h3><span class="date">Sep 2021 – Sep 2024</span></div>

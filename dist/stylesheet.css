@@ -42,8 +42,11 @@ h3 { margin: 0 0 4px; font-size: 14px; font-weight: 700; line-height: 1.45; }
 .highlighted { background: #ffffd0; }
 .thumbnail { width: 160px; height: 160px; display: block; overflow: hidden; }
 .thumbnail > img { display: block; width: 100%; height: 100%; object-fit: contain; }
-.namvis-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3px; height: 160px; }
+.namvis-grid { display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 16px repeat(2, minmax(0, 1fr)); gap: 3px; height: 182px; }
 .namvis-grid > img { min-width: 0; min-height: 0; object-fit: contain; }
+.preview-label { color: #595959; font-size: 11px; line-height: 16px; text-align: center; }
+.result-preview { display: grid; grid-template-rows: 16px minmax(0, 1fr); gap: 5px; }
+.result-preview > img { min-height: 0; }
 .entry-body p { margin: 0; }
 .entry-body .paper-links { margin: 5px 0 8px; }
 .entry-body .description { margin: 0; }
@@ -73,14 +76,15 @@ footer p { margin: 0; }
   h1 { font-size: 30px; margin-bottom: 22px; }
   .research-entry { grid-template-columns: 120px minmax(0, 1fr); gap: 20px; padding: 21px 20px; }
   .thumbnail { width: 120px; height: 120px; }
-  .namvis-grid { height: 120px; }
+  .namvis-grid { height: 142px; }
   .entry-heading { flex-wrap: wrap; gap: 1px 12px; }
   .date { font-size: 12px; }
 }
 @media (max-width: 440px) {
   .research-entry { grid-template-columns: minmax(0, 1fr); gap: 15px; }
   .thumbnail { width: 160px; height: 130px; }
-  .namvis-grid { width: 160px; height: 160px; }
+  .namvis-grid { width: 160px; height: 182px; }
+  .result-preview { height: 160px; }
   .profile-links { column-gap: 8px; }
   footer { text-align: left; }
 }
